@@ -28,7 +28,7 @@ require_once APP_BASE_PATH . 'view/common/game.view.php';
 
 class view_highliukreversitutorial_highliukreversitutorial extends game_view
 {
-    private $game;
+    public $game;
 
     protected function getGameName()
     {
