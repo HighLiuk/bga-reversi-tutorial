@@ -28,12 +28,30 @@ require_once APP_BASE_PATH . 'view/common/game.view.php';
 
 class view_highliukreversitutorial_highliukreversitutorial extends game_view
 {
+    /**
+     * The game table
+     *
+     * @var Table
+     */
     public $game;
+
+    /**
+     * The game page
+     *
+     * @var Page
+     */
+    public $page;
+
+    /**
+     * The game name
+     *
+     * @var string
+     */
+    const GAME_NAME = 'highliukreversitutorial';
 
     protected function getGameName()
     {
-        // Used for translations and stuff. Please do not modify.
-        return 'highliukreversitutorial';
+        return self::GAME_NAME;
     }
 
     function build_page($viewArgs)
@@ -41,6 +59,26 @@ class view_highliukreversitutorial_highliukreversitutorial extends game_view
         // Get players & players number
         $players = $this->game->loadPlayersBasicInfos();
         $players_nbr = count($players);
+
+        // Add the game tiles (transparent images) to the page
+        $this->page->begin_block(
+            self::GAME_NAME . '_' . self::GAME_NAME,
+            'square'
+        );
+
+        $hor_scale = 64.8;
+        $ver_scale = 64.4;
+
+        for ($x = 1; $x <= 8; $x++) {
+            for ($y = 1; $y <= 8; $y++) {
+                $this->page->insert_block('square', [
+                    'X' => $x,
+                    'Y' => $y,
+                    'LEFT' => round(($x - 1) * $hor_scale + 10),
+                    'TOP' => round(($y - 1) * $ver_scale + 7),
+                ]);
+            }
+        }
 
         /*********** Place your code below:  ************/
 
