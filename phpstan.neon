@@ -1,0 +1,6 @@
+parameters:
+  level: 0
+  paths:
+    - src
+  scanDirectories:
+    - /Users/luca/code/open-source/bga-sharedcode/misc/module

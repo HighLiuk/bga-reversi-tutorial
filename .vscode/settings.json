@@ -1,0 +1,17 @@
+{
+  "intelephense.diagnostics.argumentCount": false,
+  "intelephense.diagnostics.deprecated": false,
+  "intelephense.diagnostics.duplicateSymbols": false,
+  "intelephense.diagnostics.embeddedLanguages": false,
+  "intelephense.diagnostics.implementationErrors": true,
+  "intelephense.diagnostics.languageConstraints": false,
+  "intelephense.diagnostics.typeErrors": false,
+  "intelephense.diagnostics.undefinedClassConstants": false,
+  "intelephense.diagnostics.undefinedConstants": false,
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedMethods": false,
+  "intelephense.diagnostics.undefinedProperties": false,
+  "intelephense.diagnostics.undefinedSymbols": false,
+  "intelephense.diagnostics.undefinedTypes": false,
+  "intelephense.diagnostics.undefinedVariables": false
+}
