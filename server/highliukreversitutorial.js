@@ -20,6 +20,7 @@ define([
   "dojo/_base/declare",
   "ebg/core/gamegui",
   "ebg/counter",
+  g_gamethemeurl + "modules/main.js",
 ], function (dojo, declare) {
   return declare("bgagame.highliukreversitutorial", ebg.core.gamegui, {
     constructor: function () {

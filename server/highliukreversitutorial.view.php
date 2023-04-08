@@ -60,26 +60,6 @@ class view_highliukreversitutorial_highliukreversitutorial extends game_view
         $players = $this->game->loadPlayersBasicInfos();
         $players_nbr = count($players);
 
-        // Add the game tiles (transparent images) to the page
-        $this->page->begin_block(
-            self::GAME_NAME . '_' . self::GAME_NAME,
-            'square'
-        );
-
-        $hor_scale = 64.8;
-        $ver_scale = 64.4;
-
-        for ($x = 1; $x <= 8; $x++) {
-            for ($y = 1; $y <= 8; $y++) {
-                $this->page->insert_block('square', [
-                    'X' => $x,
-                    'Y' => $y,
-                    'LEFT' => round(($x - 1) * $hor_scale + 10),
-                    'TOP' => round(($y - 1) * $ver_scale + 7),
-                ]);
-            }
-        }
-
         /*********** Place your code below:  ************/
 
         /*

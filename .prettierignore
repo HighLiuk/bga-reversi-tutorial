@@ -1,2 +1,6 @@
 node_modules
 vendor
+
+# minified files
+server/modules/main.js
+server/highliukreversitutorial.css
